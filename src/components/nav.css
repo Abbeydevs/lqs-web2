@@ -1,0 +1,107 @@
+.nav {
+  width: 100%;
+  background: white;
+  position: fixed;
+  z-index: 1000;
+  color: var(--text-color);
+}
+
+.navigation {
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lqs-logo {
+  width: 120px;
+  height: 80px;
+}
+
+.nav-links {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  gap: 4rem;
+}
+
+.nav-links ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+li {
+  list-style: none;
+}
+
+.enrol-btn {
+  width: 50px;
+}
+
+.navigation .nav-links Link {
+  font-size: 16px;
+  font-family: "Sen", sans-serif;
+}
+
+.nav-links a:hover {
+  color: blue;
+}
+
+.hamburger {
+  display: none;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 990px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 350px;
+    height: 100vh;
+    background: white;
+    box-shadow: 1px 10px 10px #00000012;
+    transition: .5s ease-in-out;
+    padding-top: 7rem;
+    /* z-index: 100; */
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: .5 ease-in-out;
+    padding-top: 0.1rem;
+    gap: 3rem; 
+  }
+
+  .nav-links.open {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .navigation {
+        padding: 10px 20px;
+      }
+      
+}

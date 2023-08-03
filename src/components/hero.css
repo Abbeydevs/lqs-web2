@@ -1,0 +1,119 @@
+.hero-container {
+  padding: 150px 100px;
+  background-image: url(../../public/images/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.hero-container p {
+  color: rgb(27, 133, 253);
+  font-size: 12px;
+}
+
+.hero-container h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.h-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-content {
+  background-color: white;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.card h2 {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgb(76, 76, 240);
+}
+
+.card button {
+  margin-top: 30px;
+  background-color: rgb(21, 107, 206);
+  padding: 15px 10px;
+  border: none;
+  color: white;
+  width: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.serv {
+  color: rgb(21, 107, 206);
+  text-decoration: underline;
+  font-weight: 600;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1200px) {
+  .h-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-container {
+    padding: 150px 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hero-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-options {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .h-contents {
+    align-items: center;
+  }
+
+  .serv {
+    text-align: center;
+  }
+}
