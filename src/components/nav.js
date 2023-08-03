@@ -23,19 +23,19 @@ export default function Nav() {
         </Link>
         <div className={mobileNav ? "nav-links open" : "nav-links"}>
           <ul>
-            <Link href="/courses">
+            <Link href="/">
               <li>Home</li>
             </Link>
-            <Link href="/about">
+            <Link href="https://lqshealthcareservices.co.uk/about.html">
               <li>LQS Team</li>
             </Link>
-            <Link href="/pricing">
+            <Link href="https://lqshealthcareservices.co.uk/services.html">
               <li>Care Services we provide</li>
             </Link>
-            <Link href="/#faq">
+            <Link href="https://lqshealthcareservices.co.uk/testimonial.html">
               <li>Review</li>
             </Link>
-            <Link href="/#faq">
+            <Link href="https://lqshealthcareservices.co.uk/contact.html">
               <li>Contact</li>
             </Link>
           </ul>

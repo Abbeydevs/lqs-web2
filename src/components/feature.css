@@ -1,0 +1,59 @@
+.feature-container {
+  background-color: rgb(209, 209, 209);
+  padding: 50px 200px;
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  color: rgb(54, 54, 54);
+}
+
+.left-f p {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.sm-p {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.left-f button {
+  padding: 15px 0;
+  width: 120px;
+  background-color: rgb(5, 34, 116);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right-f .rf-title {
+  font-weight: 600;
+}
+
+.service-ls {
+  font-size: 15px;
+}
+
+.service-ls li {
+  list-style-type: circle;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1200px) {
+  .feature-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    .feature-container {
+        padding: 50px 100px;
+      }
+}
+
+@media screen and (max-width: 750px) {
+    .feature-container {
+        padding: 50px;
+      }
+}
